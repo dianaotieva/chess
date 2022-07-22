@@ -1,0 +1,54 @@
+
+.main{
+position: absolute;
+width: 923px;
+height: 1196px;
+left: 0px;
+top: 0px;
+
+background: url(chess.png);
+}
+
+.rectangle{
+position:absolute;
+background: #7025fb;
+width: 923px;
+height: 84px;
+}
+.rectangle2{
+position: absolute;
+width: 923px;
+height: 1196px;
+left: 923px;
+top: 0px;
+
+background: #FD5334;
+}
+
+.t1{
+    position: absolute;
+    /* width: 496px;
+    height: 109px;
+    left: 1008px;
+    top: 265px; */
+    font-style: normal;
+    /* font-weight: 800;
+    font-size: 80px;
+    line-height: 109px; */
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+
+}
+
+.title{
+position: absolute;
+width: 252.82px;
+height: 23.35px;
+left: 22.93px;
+top: 0px;
+color: white;
+}
+
+
+
