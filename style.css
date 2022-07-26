@@ -1,54 +1,133 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 .main{
 position: absolute;
 width: 923px;
-height: 1196px;
-left: 0px;
-top: 0px;
-
+height: 923px;
 background: url(chess.png);
 }
 
 .rectangle{
-position:absolute;
+display: flex;
 background: #7025fb;
 width: 923px;
 height: 84px;
 }
+
+.img{
+
+width: 10px;
+height: 13px;
+    
+margin-left: 60px;
+margin-top: 10px;
+}
+
+.title{
+margin-left: 83px;
+margin-top: 30px;
+color: white;
+letter-spacing: 1px;
+}
+
 .rectangle2{
+display: flex;
+justify-content: center;
+align-items: center;
 position: absolute;
 width: 923px;
-height: 1196px;
+height: 923px;
 left: 923px;
 top: 0px;
 
 background: #FD5334;
 }
 
+
+
+
+
+    
 .t1{
-    position: absolute;
-    /* width: 496px;
-    height: 109px;
-    left: 1008px;
-    top: 265px; */
+    text-align: left;
     font-style: normal;
-    /* font-weight: 800;
+    font-weight: 800;
     font-size: 80px;
-    line-height: 109px; */
+    line-height: 109px; 
+    text-transform: uppercase;
+    font-family: 'Nunito';
+    color: #FFFFFF;
+    word-spacing: normal;
+
+}
+
+.t2{
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 900;
+font-size: 80px;
+line-height: 109px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+
+.t3{
+   
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
     text-transform: uppercase;
     
-    color: #FFFFFF;
-
+    color: #212529;
+    }
+.texts{
+    display: flex;
+    flex-direction: column;
 }
 
-.title{
-position: absolute;
-width: 252.82px;
-height: 23.35px;
-left: 22.93px;
-top: 0px;
-color: white;
+.button {
+
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    
+    gap: 10px;
+    
+    
+    position: absolute;
+    width: 191px;
+    height: 53px;
+    left: 1108px;
+    top: 705px;
+    
+    background: #212529;
+    border-radius: 8px;
 }
+
+ .button p{
+text-align: center;
+font-family: 'Open Sans';
+padding-left: 30px;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+
+.button img{
+    width: 24px;
+    height: 24px;
+}
+
 
 
 
