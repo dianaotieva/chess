@@ -4,69 +4,93 @@
 
 .main{
 position: absolute;
-width: 923px;
-height: 923px;
-background: url(chess.png);
+
 }
 
+.mainimg{
+
+width: 923px;
+height: 1196px;
+left: 0;
+top: 0;
+background: url(chess.png) no-repeat;
+}
+
+
+/* header{
+
+} */
 .rectangle{
 display: flex;
+justify-content: center;
+align-items: center;
 background: #7025fb;
 width: 923px;
 height: 84px;
 }
 
-.img{
 
-width: 10px;
-height: 13px;
-    
-margin-left: 60px;
-margin-top: 10px;
-}
 
 .title{
-margin-left: 83px;
-margin-top: 30px;
-color: white;
-letter-spacing: 1px;
+position: absolute;
+font-weight: bold;
+width: 252.82px;
+height: 23.35px;
+left: 75px;
+font-size: 20px;
+color:#FFFFFF;
+}
+
+img{
+    position: absolute;
+    left: 55px;
+    top: 34px;
+    width:15px;
+    height: 17px;
+    
 }
 
 .rectangle2{
-display: flex;
-justify-content: center;
-align-items: center;
+
 position: absolute;
-width: 923px;
-height: 923px;
+width: 997px;
+height: 1080px;
 left: 923px;
-top: 0px;
+top: 0;
+
 
 background: #FD5334;
 }
 
 
+.content{
 
+margin-top: 265px;
+margin-left: 85px;
+
+}
 
 
     
 .t1{
-    text-align: left;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 80px;
-    line-height: 109px; 
-    text-transform: uppercase;
-    font-family: 'Nunito';
-    color: #FFFFFF;
-    word-spacing: normal;
+text-align: justify;
+font-style: normal;
+font-weight: bold;
+font-size: 80px;
+line-height: 109px; 
+text-transform: uppercase;
+font-family: 'Nunito';
+color: #FFFFFF;
+word-spacing: normal;
+left: 1008px;
+top: 265px;
 
 }
 
 .t2{
 font-family: 'Nunito';
 font-style: normal;
-font-weight: 900;
+font-weight: bold;
 font-size: 80px;
 line-height: 109px;
 text-transform: uppercase;
@@ -75,45 +99,31 @@ color: #FFFFFF;
 
 }
 
-.t3{
+span{
    
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    text-transform: uppercase;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+text-transform: uppercase;
     
-    color: #212529;
-    }
-.texts{
-    display: flex;
-    flex-direction: column;
+color: #212529;
 }
 
-.button {
 
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    
-    gap: 10px;
-    
-    
-    position: absolute;
-    width: 191px;
-    height: 53px;
-    left: 1108px;
-    top: 705px;
-    
-    background: #212529;
-    border-radius: 8px;
-}
+.btn {
 
- .button p{
-text-align: center;
+gap: 10px;
+width: 191px;
+height: 53px;
+/* left: 1008px;
+top: 601px; */
+    
+background: #212529;
+border-radius: 8px;
+
 font-family: 'Open Sans';
-padding-left: 30px;
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -123,10 +133,11 @@ text-transform: capitalize;
 color: #FFFFFF;
 }
 
-.button img{
+.fa {
     width: 24px;
     height: 24px;
 }
+
 
 
 
