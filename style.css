@@ -11,8 +11,8 @@ position: absolute;
 
 width: 923px;
 height: 1196px;
-left: 0;
-top: 0;
+/* left: 0;
+top: 0; */
 background: url(chess.png) no-repeat;
 }
 
@@ -54,7 +54,7 @@ img{
 
 position: absolute;
 width: 997px;
-height: 1080px;
+height: 1004px;
 left: 923px;
 top: 0;
 
