@@ -1,15 +1,23 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
-.main{
-position: absolute;
-
+body{
+max-width: 100vw;
+min-height: 100vh;
 }
 
+.main{
+display: flex;
+width: 100%;
+height: 100%;
+
+}
+header{
+    width: 50%;
+}
 .mainimg{
 
-width: 923px;
+width: 100%;
 height: 1196px;
 /* left: 0;
 top: 0; */
@@ -17,15 +25,13 @@ background: url(chess.png) no-repeat;
 }
 
 
-/* header{
 
-} */
 .rectangle{
 display: flex;
 justify-content: center;
 align-items: center;
 background: #7025fb;
-width: 923px;
+width: 100%;
 height: 84px;
 }
 
@@ -52,11 +58,10 @@ img{
 
 .rectangle2{
 
-position: absolute;
-width: 997px;
+
+width: 50%;
 height: 1004px;
-left: 923px;
-top: 0;
+
 
 
 background: #FD5334;
