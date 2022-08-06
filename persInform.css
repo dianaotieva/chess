@@ -150,23 +150,25 @@ header{
 
 .rectangle{
 display: flex;
-justify-content: center;
+justify-content:flex-start;
 align-items: center;
+
 background: #7025fb;
 width: 100%;
 height: 84px;
 }
      
 img{
-    position: absolute;
-    left: 55px;
-    top: 34px;
+    /* position: absolute; */
+    /* left: 55px;
+    top: 34px; */
+    margin-left: 60px;
     width:15px;
     height: 17px;
 } 
 
 .title{
-    position: absolute;
+    /* position: absolute; */
     font-weight: bold;
     width: 252.82px;
     height: 23.35px;
@@ -246,6 +248,12 @@ height: 0px;
 border: 1px solid rgba(185, 180, 196, 0.3);
 }
 
+.inputtexts{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
 .inputs{
 display: flex;
 flex-direction: column;
@@ -279,6 +287,8 @@ box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
 border-radius: 4px;
 font-size: 20px;
 }
+
+
 
 .frames{
 display: flex;
@@ -405,19 +415,53 @@ color: #95939A;
 }
 
 .btns{
-/* display: flex; */
+    display: flex;
+   
 }
 
 .next-button{
-width: 128px;
+    margin-top: 96px;
+    margin-left: 658px;
+    gap: 10px;
+    width: 128px;
+    height: 53px;
+        
+    background: #212529;
+    border-radius: 8px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+
+
+}
+
+
+.back-button{
+box-sizing: border-box;
+
+/* Auto layout */
+
+/* display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 13px 24px; */
+gap: 10px;
+margin-top:96px;
+width: 93px;
 height: 53px;
-left: 1618px;
+left: 971px;
 top: 873px;
 
-background: #212529;
+border: 1px solid #212529;
 border-radius: 8px;
 
-/*text*/
+/* text */
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
@@ -425,8 +469,7 @@ font-size: 20px;
 line-height: 27px;
 text-transform: capitalize;
 
-color: #FFFFFF;
-
+color: #212529;
 }
 
 
