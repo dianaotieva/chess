@@ -7,6 +7,7 @@
     <title>personInform</title>
     <link rel="stylesheet" href="persInform.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     <main class="main">
@@ -43,22 +44,30 @@
 
             </div>
            
-            <form class="inputs">
+            <form class="inputs" name="reg_form" >
                <div class="inputtexts">
                     <h1 >personal information</h1>
                         <p>This is basic informaton fields</p>
                     </div>
                         
-                <input type="text" class="input" id="name" name="name" placeholder="Name">
-                <input type="text" class="input" id="email"  name="email" placeholder="Email address">
-                <input type="text" class="input" id="phone" name="phone" placeholder="Phone number">
-                <input type="text" class="input" id="date" name="date" placeholder="Date of birth">
+                <input type="text" class="input" id="name" name="name" placeholder="Name" required>
+                <input 
+                type="text" class="input" id="email"  name="email" placeholder="Email address" required>
+                <input 
+                type='number'
+                class="input" 
+                id="phone" 
+                name="phone" 
+                min="0"
+                maxlength="9"
+                 placeholder="Phone number"  required>
+                <input type="text" class="input" id="date" name="date" type="date" placeholder="Date" required>
 
                 
                 <div class="btns">
             
                 <button class="back-button"><a href="http://127.0.0.1:5500/index.html">back</a> </button>
-                <button class="next-button">next <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+                <button class="next-button" type="submit" onclick="validation()">next <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
                 </div>
                 
             
@@ -66,9 +75,9 @@
 
 
 
-            <!-- <button class="next-button"><p>next</p><a href="http://127.0.0.1:5500/index.html"> <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></a></i></button> -->
+            
 
-           
+            <script src="persInform.js" defer ></script>
             
            
 
