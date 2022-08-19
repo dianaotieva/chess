@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chessExp.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ChessExperience</title>
+</head>
+<body>
+    <main class="main">
+        <header>
+            <div class="rectangle"> 
+                <img src="Vector.png"/>
+                <p class="title">Redberry Knight Cup</p>
+                
+            </div>
+            <div class="mainimg">
+                <h2>"Many have become chess masters; <br>
+                    no one has become the master of chess."</h2>
+                    <h3> - Siegbert Tarrasch</h3>
+            </div>
+        </header>
+        <div class="content">
+            <p class="heading">First step is done, continue to finish onboarding</p>
+                <div class="line"></div>
+
+
+                <div class="frames">
+                    <div class="frame1">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="frame2">
+                        <p>2</p>
+                    </div>
+
+                </div>
+                <div class="texts">
+                <p class="pi">personal information</p>
+                <p class="ce">chess experience</p>
+              </div>    
+        </div>
+
+        <form class="inputs" name="chessExp" >
+            <div class="inputtexts">
+                 <h1 >chess expericence</h1>
+                 <p>This is basic informaton fields</p>  
+                 </div>
+
+                 <select class="selectKnowledge">
+                    <option value="levelofknowledge">Level Of Knowledge <span class="span">*</span></option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="professional">Professional</option>
+                 </select>
+
+                 <select class="selectCharacter">
+                    <option value="chooseCharacter">Choose Your Character <span class="span">*</span></option>
+                    <option value="magnusCarlsen">Magnus Carlsen</option>
+                    <option value="wilhelmSteinitz">Wilhelm Steinitz</option>
+                    <option value="bobbyFischer">Bobby Fisher</option>
+                 </select>
+
+                 <h4>Have you participated in the Redberry Championship? <span class="span">*</span></h4>
+                 <input type="radio" id="yes" value="yes"><label for="yes">Yes</label>
+                 <input type="radio" id="no"  value="no"><label for="no">No</label>
+                </form>
+
+                <div class="btns">
+            
+                    <button class="back-button"><a>back</a> </button>
+                    <button class="next-button" type="submit" onclick="validation()">next <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+                    </div>
+
+
+</body>
+</html>
