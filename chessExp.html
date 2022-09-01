@@ -45,36 +45,38 @@
               </div>    
         </div>
 
-        <form class="inputs" name="chessExp" >
+        <form action="#" class="inputs" method="post"  >
             <div class="inputtexts">
                  <h1 >chess expericence</h1>
                  <p>This is basic informaton fields</p>  
                  </div>
 
-                 <select class="selectKnowledge">
-                    <option value="levelofknowledge">Level Of Knowledge <span class="span">*</span></option>
+                 <select class="required" id="selectKnowledge" >
+                    <option value="levelofknowledge">Level Of Knowledge <sup class="star">*</sup></option>
                     <option value="beginner">Beginner</option>
                     <option value="intermediate">Intermediate</option>
                     <option value="professional">Professional</option>
                  </select>
 
-                 <select class="selectCharacter">
-                    <option value="chooseCharacter">Choose Your Character <span class="span">*</span></option>
+                 <select class="required" id="selectCharacter">
+                    <option value="chooseCharacter">Choose Your Character <sup class="star">*</sup></option>
                     <option value="magnusCarlsen">Magnus Carlsen</option>
                     <option value="wilhelmSteinitz">Wilhelm Steinitz</option>
                     <option value="bobbyFischer">Bobby Fisher</option>
                  </select>
 
-                 <h4>Have you participated in the Redberry Championship? <span class="span">*</span></h4>
-                 <input type="radio" id="yes" value="yes"><label for="yes">Yes</label>
-                 <input type="radio" id="no"  value="no"><label for="no">No</label>
-                </form>
+                 <h4>Have you participated in the Redberry Championship? <sup class="star">*</sup></h4>
+                 <input type="radio" name="yesNo" id="yes" value="yes"><label for="yes">Yes</label>
+                 <input type="radio" name="yesNo" id="no"  value="no"><label for="no">No</label>
 
-                <div class="btns">
+                 <div class="btns">
             
                     <button class="back-button"><a>back</a> </button>
-                    <button class="next-button" type="submit" onclick="validation()">next <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+                    <button class="next-button" type="submit" >next <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
                     </div>
+                </form>
+
+                <script src="chessExp.js" defer ></script>
 
 
 </body>

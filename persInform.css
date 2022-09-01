@@ -38,6 +38,7 @@ img{
 
 .title{
     /* position: absolute; */
+    font-family: 'Nunito';
     font-weight: bold;
     width: 252.82px;
     height: 23.35px;
@@ -259,7 +260,7 @@ text-transform: capitalize;
 }
 
 .inputs{
-left: 960px;
+left: 930px;
 top: 240px;
 }
 
@@ -277,8 +278,7 @@ color: #000000;
 
 
 }
-
-p{
+.tbi{
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 600;
