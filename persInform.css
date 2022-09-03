@@ -165,6 +165,19 @@ font-size: 20px;
   .input:focus:invalid {
     box-shadow: none;
   } */
+.required-field{
+    font-size: 24px;
+}
+.required-field::before {
+    
+    content: "*";
+    color: red;
+    float: right;
+  }
+
+.inputfields{
+    display:flex;
+}
 
 .frames{
 display: flex;
@@ -292,6 +305,11 @@ color: #95939A;
 .btns{
     display: flex;
    
+}
+
+.fa {
+    width: 24px;
+    height: 24px;
 }
 
 .next-button{

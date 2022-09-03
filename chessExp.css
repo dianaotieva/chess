@@ -254,7 +254,17 @@ border: 1px solid rgba(185, 180, 196, 0.3);
         color: #95939A;
         }
 
-
+        .required-field{
+            font-size: 24px;
+            
+        }
+        .required-field::before {
+            
+            content: "*";
+            color: red;
+            /* float: right; */
+          }
+        
 
     #selectKnowledge{
         width: 392px;

@@ -51,23 +51,23 @@
                  <p>This is basic informaton fields</p>  
                  </div>
 
-                 <select class="required" id="selectKnowledge" >
-                    <option value="levelofknowledge">Level Of Knowledge <sup class="star">*</sup></option>
+                 <select class="required" name="selectKnowledge" id="selectKnowledge" required>
+                    <option value="levelofknowledge">Level Of Knowledge </option>
                     <option value="beginner">Beginner</option>
                     <option value="intermediate">Intermediate</option>
                     <option value="professional">Professional</option>
-                 </select>
+                 </select><span class="required-field"></span>
 
-                 <select class="required" id="selectCharacter">
-                    <option value="chooseCharacter">Choose Your Character <sup class="star">*</sup></option>
+                 <select class="required" name="selectCharacter" id="selectCharacter">
+                    <option value="chooseCharacter">Choose Your Character </option>
                     <option value="magnusCarlsen">Magnus Carlsen</option>
                     <option value="wilhelmSteinitz">Wilhelm Steinitz</option>
                     <option value="bobbyFischer">Bobby Fisher</option>
-                 </select>
+                 </select><span class="required-field"></span>
 
-                 <h4>Have you participated in the Redberry Championship? <sup class="star">*</sup></h4>
-                 <input type="radio" name="yesNo" id="yes" value="yes"><label for="yes">Yes</label>
-                 <input type="radio" name="yesNo" id="no"  value="no"><label for="no">No</label>
+                 <h4>Have you participated in the Redberry Championship? <span class="required-field"></span></h4>
+                 <input type="radio" name="yesNo" id="yes" value="yes" required><label for="yes">Yes</label>
+                 <input type="radio" name="yesNo" id="no"  value="no" required><label for="no">No</label>
 
                  <div class="btns">
             
