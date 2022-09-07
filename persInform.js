@@ -4,7 +4,16 @@ function validation(){
     var email = document.reg_form.email;
     var phone = document.reg_form.phone;
     var date = document.reg_form.date;
+    
+    
+    var inputName = document.getElementById("name");
+    var inputEmail= document.getElementById("email");
+    var inputPhone = document.getElementById("phone");
+    var inputDate = document.getElementById("date");
+    
 
+
+    ////Validation
     if(name.value.length <= 0){
         alert("Name is required");
         name.focus();
@@ -24,6 +33,13 @@ function validation(){
         email.focus();
         return false;
     }
+
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email format!")
+    return (false);
 
     
     if(phone.value.length <= 0){
@@ -47,11 +63,24 @@ function validation(){
         return false;
     }
 
+
+    /////Store data to storage
+
+    var inputName= document.getElementById("name");
+     localStorage.setItem("name", inputName.value);
+
+     var inputEmail= document.getElementById("email");
+     localStorage.setItem("email", inputEmail.value);
+
+     var inputPhone= document.getElementById("phone");
+     localStorage.setItem("phone", inputPhone.value);
+
+     var inputDate= document.getElementById("date");
+     localStorage.setItem("date", inputDate.value);
+
+     
+
    
 }
 
-let keys = Object.keys(localStorage);
-for(let key of keys) {
-  console.log(`${key}: ${localStorage.getItem(key)}`);
-}
 

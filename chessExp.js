@@ -29,5 +29,21 @@
 // var button = document.querySelector(".next-button");
 
 // button.addEventListener("click", getData);
+// inputs.onsubmit = async (e) => {
+//     e.preventDefault();
 
+//     let response = await fetch('/article/formdata/post/user-avatar', {
+//       method: 'POST',
+//       headers:{
+//             'accept': 'application/json',
+//             'Content-Type': 'application/json'
+                
+//       },
+//       body: new FormData(inputs)
+//     });
+
+//     let result = await response.json();
+
+//     alert(result.message);
+//   };
 
