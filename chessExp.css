@@ -90,6 +90,10 @@ text-transform: uppercase;
 color: #093F68;
 }
 
+.fa {
+    color: green;
+}
+
 .star{
     color: red;
 }
@@ -164,7 +168,7 @@ border: 1px solid rgba(185, 180, 196, 0.3);
     width: 40px;
     height: 40px;
     
-    background: #F5F5F5;
+    background: grey;
     border: 1px solid #E5E6E8;
     border-radius: 8px;
     

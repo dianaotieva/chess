@@ -1,6 +1,6 @@
 // const getData = async(e) =>{
 //     e.preventDefault();
-//     // console.log(formValues.name);
+//     console.log(formValues.name);
 //     try{
 //         const response = await fetch('https://chess-tournament-api.devtest.ge/api/register',{
 //             method: 'POST',
@@ -26,24 +26,25 @@
 // }
 
 
-// var button = document.querySelector(".next-button");
+let inputs = document.getElementById("inputs");
 
-// button.addEventListener("click", getData);
-// inputs.onsubmit = async (e) => {
-//     e.preventDefault();
+inputs.addEventListener("submit", async (e)=>{
+    e.preventDefault();
 
-//     let response = await fetch('/article/formdata/post/user-avatar', {
-//       method: 'POST',
-//       headers:{
-//             'accept': 'application/json',
-//             'Content-Type': 'application/json'
-                
-//       },
-//       body: new FormData(inputs)
-//     });
+    let form = e.currentTarget;
 
-//     let result = await response.json();
+    let url = form.action;
 
-//     alert(result.message);
-//   };
+    try {
+        let formFields = new FormData(form);
+
+        let responseData = await postFormFieldsAsJson({url,FormData});
+
+        let{serverDataResponse} = responseData;
+
+        console.log(serverDataResponse);
+    }catch (error){
+        console.error(error);
+    }
+});
 
