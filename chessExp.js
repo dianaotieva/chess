@@ -1,50 +1,20 @@
-// const getData = async(e) =>{
-//     e.preventDefault();
-//     console.log(formValues.name);
-//     try{
-//         const response = await fetch('https://chess-tournament-api.devtest.ge/api/register',{
-//             method: 'POST',
-//             headers:{
-//                 'accept': 'application/json',
-//                 'Content-Type': 'application/json'
-        
-//             },
-//             body: JSON.stringify({
-//                 "name": formValues.name,
-//                 "email": formValues.email,
-//                 "phone": formValues.phone,
-//                 "date_of_birth": "10/20/1997",
-//                 "experience_level": "begginer",
-//                 "already_participated": true,
-//                 "character_id": 2                    
-//             })
-//         });
-//         console.log(response.statusText)
-//     }catch(error){
-//         console.log(error)
-//     }
-// }
+const formEl = document.querySelector('.inputs');
 
+formEl.addEventListener('submit', event =>{
+    event.preventDefault();
 
-let inputs = document.getElementById("inputs");
+     const formData = new FormData(formEl);
+     const data = Object.fromEntries(formData);
 
-inputs.addEventListener("submit", async (e)=>{
-    e.preventDefault();
-
-    let form = e.currentTarget;
-
-    let url = form.action;
-
-    try {
-        let formFields = new FormData(form);
-
-        let responseData = await postFormFieldsAsJson({url,FormData});
-
-        let{serverDataResponse} = responseData;
-
-        console.log(serverDataResponse);
-    }catch (error){
-        console.error(error);
-    }
+     fetch("https://chess-tournament-api.devtest.ge/api/register",{
+        method: 'POST',
+        headers: {
+            "Content-Type": "aplication/json"
+        },
+        body: JSON.stringify(data)
+     }).then(res => res.json())
+     .then(data => console.log(data))
+     .catch(console.log(error));
 });
+
 
